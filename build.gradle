@@ -21,6 +21,7 @@ group 'com.mogacko.tarot'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
+apply plugin: 'antlr'
 repositories {
     mavenCentral()
 }

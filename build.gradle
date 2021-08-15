@@ -30,8 +30,14 @@ repositories {
 dependencies {
     //의존 라이브러리 등록 시 compile >> implementation으로 변경
     implementation('org.springframework.boot:spring-boot-starter-web')
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
     implementation('org.projectlombok:lombok')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('com.h2database:h2')
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
     //lombok implementation만으로는 dto에서 생성자가 생기지 않아 추가해줌.
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
     annotationProcessor('org.projectlombok:lombok')
+
+
 }
+

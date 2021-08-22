@@ -1,5 +1,6 @@
 package com.mogacko.admin.domain.posts;
 
+import com.mogacko.admin.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity //Entity class에서는 Setter 메소드를 만들지 않는다. *절대*
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
